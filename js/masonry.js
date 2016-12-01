@@ -1,10 +1,16 @@
-var elem = document.querySelector('.grid');
-
-// element argument can be a selector string
-//   for an individual element
-var grid = new Masonry( '.grid', {
-    // options
-    columnWidth: 1,
-    gutter: 20,
-    itemSelector: '.grid-item',
+$('.portfolio').masonry({
+  // options
+  itemSelector: '.portfolio-item',
+  columnWidth: 1,
+  gutter: 0
 });
+
+// Does masonry layout every resize - might give perfomance hit?
+$(window).resize(function(){
+  $('.portfolio').masonry({
+    // options
+    itemSelector: '.portfolio-item',
+    columnWidth: 1,
+    gutter: 0
+  });
+}).resize();
