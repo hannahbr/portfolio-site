@@ -223,21 +223,22 @@ a{
 
 /* Responsive portfolio items */
 
-.portfolio {
-  width: 100%;
-  height: auto;
-  position: relative;
+.grid {
+    background: #DDD;
+  max-width: 1000px;
 }
 
-.portfolio .portfolio-item {
-  /*max-width: 100%;*/
-  /*height: auto;*/
-  /*margin-bottom: 5px;*/
-  padding: 5px;
+
+
+.grid-item {
+    float: left;
+  width: 300px;
+  height: 300px;
+
 }
 
-.portfolio .portfolio-item img {
-  max-width: 100%;
-  width: 100%;
-  height: auto !important;
-}
+.grid-item--width2 { width: 400px; }
+.grid-item--width3 { width: 600px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 400px; }
