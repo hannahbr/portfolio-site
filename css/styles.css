@@ -4,13 +4,25 @@ html{
 }
 
 body{
-    max-width:1000px;
+    max-width:100%;
     margin:0 auto;
     padding:0 20px 0 20px;
 }
 
+/* Header styling */
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 300px;
+    padding-left:20px;
+    
+}
 .hb{
-    width:150px;
+    width:90%;
+    max-width:200px;
 
 }
 
@@ -21,14 +33,15 @@ body{
 }
 
 #logo {
-  float: left;
-  width: 40%;
+  display:block;
+  width: 100%;
+  padding-bottom:30px;
 }
 
 #header-text{
-    float:right;
-    width: 60%;
-    text-align:right;
+    display:block;
+    width: 100%;
+    text-align:left;
 }
 
 @media (max-width: 500px) {
@@ -63,6 +76,8 @@ h3{
     margin:0px;
 
 }
+
+/* Header styling end */
 
 h2{
     font-size:18px;
@@ -223,10 +238,16 @@ a{
 }
 
 /* Responsive portfolio items */
+.gridContainer{
+    padding-top:40px;
+    margin-left:300px;
+    float:left;
+    width: calc(100% - 300px);
+
+}
 
 .grid {
-    background: #DDD;
-  max-width: 1000px;
+  width: 100%;
 }
 
 
@@ -234,12 +255,15 @@ a{
 .grid-item {
     float: left;
   width: 300px;
-  height: 300px;
+  /*height: 300px;*/
+  padding-bottom:10px;
 
 }
 
-.grid-item--width2 { width: 400px; }
+
+
+/*.grid-item--width2 { width: 400px; }
 .grid-item--width3 { width: 600px; }
 
 .grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 400px; }
+.grid-item--height3 { height: 400px; }*/
